@@ -1,4 +1,4 @@
-#define SENSOR_LEVEL 700
+#define SENSOR_LEVEL 800
 #define SENSOR_PIN   A0
 #define RELAY_PIN    5
 #define BLUE_LED_PIN 2
@@ -25,11 +25,11 @@ void loop() {
     counter++;
     if (lightOn && (counter == PASS_COUNT)) {
       digitalWrite(RELAY_PIN, LOW);
-      digitalWrite(BLUE_LED_PIN, LOW);
+      digitalWrite(BLUE_LED_PIN, HIGH);
       lightOn = !lightOn;
     } else if (!lightOn && (counter == PASS_COUNT)) {
       digitalWrite(RELAY_PIN, HIGH);
-      digitalWrite(BLUE_LED_PIN, HIGH);
+      digitalWrite(BLUE_LED_PIN, LOW);
       lightOn = !lightOn;
     }
   } else {
