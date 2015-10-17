@@ -1,7 +1,7 @@
 #define SENSOR_LEVEL 800
 #define SENSOR_PIN   A0
-#define RELAY_PIN    5
-#define BLUE_LED_PIN 2
+#define RELAY_PIN    12
+#define BLUE_LED_PIN 13
 #define PASS_PERIOD  100
 #define PASS_COUNT   10
 
