@@ -1,3 +1,9 @@
+/*
+  KitchenSwitchIR.ino - Arduino source code of kitchen light switcher
+  Created by Andrew A. Sergeev, November 2, 2015.
+  Released into the public domain.
+*/
+
 #define SENSOR_LEVEL 800
 #define SENSOR_PIN   A0
 #define RELAY_PIN    12
